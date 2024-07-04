@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="contact-page">
+      <form id="contactForm">
+        <div class="main-branch">
+          <!--top section -->
+          <h1>Contact Us</h1>
+
+          <!--Name section -->
+          <div class="Name">
+            <div class="first-name">
+              <label for="first-name"
+                >First Name <span class="star">*</span></label
+              >
+              <input name="first-name" type="text"  />
+            </div>
+            <div class="last-name">
+              <label for="last-name"
+                >Last Name <span class="star">*</span></label
+              >
+              <input name="last-name" type="text" required />
+            </div>
+          </div>
+
+          <!--Email section -->
+          <div class="email">
+            <label for="email">Email Address <span class="star">*</span></label>
+            <input type="email" name="email" required />
+          </div>
+
+          <!--Radio Button section -->
+          <span>Query Type <span class="star">*</span></span>
+          <div class="radio-button">
+            <div class="general">
+              <label class="General-enquiry">
+                <input
+                  type="radio"
+                  name="button1"
+                  value="General Enquiry"
+                  required
+                />
+                <p>General Enquiry</p>
+              </label>
+            </div>
+            <div class="support">
+              <label class="Support-Request">
+                <input
+                  type="radio"
+                  name="button1"
+                  value="Support Request"
+                  required
+                />
+                <p>Support Request</p>
+              </label>
+            </div>
+          </div>
+
+          <!--Message section -->
+          <label class="message">Message <span class="star">*</span></label>
+          <div class="message">
+            <textarea rows="5" cols="10" maxlength="200" required></textarea>
+          </div>
+
+          <!--Accept Policy section -->
+          <label class="accept">
+            <input type="checkbox" name="consent" required />
+            I consent to being contacted by the team <span class="star">*</span>
+          </label>
+
+          <!--Btn section -->
+          <div class="btn">
+            <button type="submit" class="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

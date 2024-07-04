@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+}
+html {
+  background-color: hsl(148, 38%, 91%);
+}
+
+main{
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+form{
+  background-color: white;
+  width: 40%;
+  height: 100;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  padding:20px;
+}
+
+
+
+.Name{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px 0px 1px 0px;
+  gap: 10px;
+}
+.first-name {
+  height: 80px;
+  width: 245px;
+}
+
+.first-name input{
+  height: 40px;
+  width: 245px;
+  border-radius: 5px;
+  border: 1px solid hsl(187, 24%, 22%);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px;
+}
+
+
+.first-name label{
+  font-size: 13px;
+  position: relative;
+  bottom: 7px;
+  color: hsl(186, 15%, 59%);
+}
+
+.first-name input:hover{
+  border: 2px solid  hsl(169, 82%, 27%) ;
+  transition:  all 0.1s ease-in-out;
+}
+
+.first-name input:focus{
+  outline: none;
+  border: 2px solid hsl(169, 82%, 27%);
+}
+.last-name {
+  height: 80px;
+  width: 245px;
+}
+
+.last-name input{
+  height: 40px;
+  width: 245px;
+  border-radius: 5px;
+  border: 1px solid hsl(187, 24%, 22%);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px;
+}
+
+.last-name label{
+  font-size: 13px;
+  position: relative;
+  bottom: 7px;
+  color: hsl(186, 15%, 59%);
+}
+
+.last-name input:hover{
+  border: 2px solid  hsl(169, 82%, 27%) ;
+  transition:  all 0.1s ease-in-out;
+}
+
+.last-name input:focus{
+  outline: none;
+  border: 2px solid hsl(169, 82%, 27%);
+}
+
+
+/* Email Section*/
+
+.email{
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 10px;
+  height: 80px;
+  margin: 12px 0px;
+}
+.email input{
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid hsl(187, 24%, 22%);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px;
+  position: relative;
+  bottom: 8px;
+}
+.email label{
+  font-size: 13px;
+  color: hsl(186, 15%, 59%); 
+}
+.email input:hover{
+  border: 2px solid  hsl(169, 82%, 27%) ;
+  transition:  all 0.1s ease-in-out;
+}
+.email input:focus{
+  outline: none;
+  border: 2px solid hsl(169, 82%, 27%);
+}
+
+.radio-button {
+  display: grid;
+  grid-template-columns: 1fr ;
+  margin: 12px 0px;
+  gap: 10px;
+  height: 80px;
+  position: relative;
+  bottom:5px;
+}
+
+.radio-button{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+
+.General-enquiry{
+  height: 40px;
+  width: 245px;
+  border-radius: 5px;
+  border: 1px solid hsl(187, 24%, 22%);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: hsl(186, 15%, 59%);
+}
+
+.General-enquiry:hover{
+  border: 2px solid hsl(169, 82%, 27%);
+  transition:  all 0.1s ease-in-out;
+}
+
+.General-enquiry input{
+  cursor: pointer;
+}
+
+.Support-Request{
+  height: 40px;
+  width: 245px;
+  border-radius: 5px;
+  border: 1px solid hsl(187, 24%, 22%);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: hsl(186, 15%, 59%);
+
+}
+.Support-Request:hover{
+  border: 2px solid hsl(169, 82%, 27%);
+  transition:  all 0.1s ease-in-out;
+}
+
+.Support-Request input{
+  cursor: pointer;
+}
+span{
+  font-size: 13px;
+  color: hsl(186, 15%, 59%); 
+}
+
+.messge{
+  font-size: 13px;
+  color: hsl(186, 15%, 59%);
+  position: relative;
+  bottom: 33px;
+}
+
+.message textarea{
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+  bottom: 24px;
+}
+
+.message textarea:hover{
+  border: 1.9px solid hsl(169, 82%, 27%);
+  transition:  all 0.1s ease-in-out;
+}
+
+
+.message textarea:focus{
+  outline: none;
+  border: 1.9px solid hsl(169, 82%, 27%); 
+}
+
+.star{
+  color: hsl(169, 91%, 46%) ;
+}
+
+.accept{
+  font-size: 13px;
+  color: hsl(186, 15%, 59%);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.btn{
+  width: 100%;
+  height: 60px;
+  margin-top: 15px;
+}
+
+.btn button{
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(169, 82%, 27%);
+  color: white;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
+  .email{
+    position: relative;
+    bottom: 8px;
+  }
+
+  .Name {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .first-name input{
+    width: 198px;
+  }
+  .last-name input{
+    width: 198px;
+  }
+
+  .General-enquiry{
+    width: 198px;
+  }
+  .Support-Request{
+    width: 198px;
+  }
+  .radio-button {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
+    width: 100px;
+  }
+  .message{
+    width: 198px;
+  }
+  .message textarea{
+    height: 120px;
+  }
+}
